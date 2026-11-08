@@ -1,0 +1,13 @@
+{
+  "source_name": "Датчики мониторинга микроклимата офиса",
+  "fields": [
+    {"name": "timestamp", "type": "datetime", "description": "Время измерения"},
+    {"name": "temperature", "type": "numeric", "unit": "°C", "role": "feature", "description": "Температура воздуха"},
+    {"name": "humidity", "type": "numeric", "unit": "%", "role": "feature", "description": "Относительная влажность"},
+    {"name": "co2", "type": "numeric", "unit": "ppm", "role": "feature", "description": "Концентрация углекислого газа"},
+    {"name": "light", "type": "numeric", "description": "Освещённость; вспомогательное поле с частыми пропусками"},
+    {"name": "label", "type": "categorical", "role": "target", "description": "Состояние микроклимата: comfort, stuffy, critical"}
+  ],
+  "target_field": "label",
+  "feature_fields": ["temperature", "humidity", "co2"]
+}

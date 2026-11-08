@@ -1,0 +1,10 @@
+__pycache__/
+.venv/
+*.joblib
+*.csv
+*.png
+Мониторинг_офиса.txt
+generation_summary.json
+scaler_params.json
+best_parameters.json
+selected_model.json
